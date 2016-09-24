@@ -126,6 +126,7 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+        Illuminate\Foundation\Providers\ArtisanServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
@@ -147,7 +148,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        
         /*
          * Application Service Providers...
          */
@@ -155,7 +156,12 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        
+        /**
+         * Third Party Service Providers...
+         */
+        Bican\Roles\RolesServiceProvider::class,
+        
     ],
 
     /*
