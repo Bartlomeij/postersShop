@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>PostersShop!</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
@@ -22,6 +22,19 @@
 
         .fa-btn {
             margin-right: 6px;
+        }
+        
+        .navbar-default{
+            width: 100%;
+            position: fixed;
+        }
+        
+        article{
+            padding-top: 70px;
+        }
+        
+        .posters{
+            text-align: center;
         }
     </style>
 </head>
@@ -40,7 +53,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
+                    PostersShop
                 </a>
             </div>
 
@@ -71,8 +84,9 @@
             </div>
         </div>
     </nav>
-
-    @yield('content')
+    <article>
+        @yield('content')
+    </article>
 
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
