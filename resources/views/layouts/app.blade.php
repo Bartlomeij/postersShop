@@ -36,6 +36,11 @@
         .posters{
             text-align: center;
         }
+        
+        .poster img{
+            margin-bottom: 15px;
+            box-shadow: 3px 3px 3px grey;
+        }
     </style>
 </head>
 <body id="app-layout">
@@ -59,9 +64,9 @@
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
+<!--                <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
-                </ul>
+                </ul>-->
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">

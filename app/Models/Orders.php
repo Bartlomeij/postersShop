@@ -1,6 +1,6 @@
 <?php
 namespace App\Models;
-use Library\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 
 class Orders extends Model
 {
