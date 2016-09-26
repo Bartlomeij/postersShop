@@ -40,6 +40,20 @@
         .poster img{
             margin-bottom: 15px;
             box-shadow: 3px 3px 3px grey;
+            -moz-filter: brightness(0.6);
+            -o-filter: brightness(0.6);
+            -ms-filter: brightness(0.6);
+            filter: brightness(0.6);
+            transition-duration:0.5s;
+        }
+        .poster img:hover{
+            margin-bottom: 15px;
+            box-shadow: 3px 3px 3px grey;
+            -moz-filter: brightness(1);
+            -o-filter: brightness(1);
+            -ms-filter: brightness(1);
+            filter: brightness(1);
+            transition-duration:0.5s;
         }
     </style>
 </head>
