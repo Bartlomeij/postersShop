@@ -14,7 +14,7 @@
                         <div class="col-xs-12 col-md-6 poster-description">
                             <h4>Description:</h4>
                             <p><?=$poster->description;?></p>
-                            <p><div class="add-to-cart-btn">€<?=$poster->price;?> <span>&nbsp;|&nbsp;</span> ADD TO CART</div></p>
+                            <p><a href="/poster/addToCart/<?=$poster->id;?>"><div class="add-to-cart-btn">€<?=$poster->price;?> <span>&nbsp;|&nbsp;</span> ADD TO CART</div></a></p>
                             <p class="shipping">FREE EXPRESS (3-4 working days) Shipping to Poland with 3 or more Posterplates.</p>
                             <h4>Recommended for you:</h4>
                             <div class="row">

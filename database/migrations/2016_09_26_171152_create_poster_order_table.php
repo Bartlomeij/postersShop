@@ -12,7 +12,7 @@ class CreatePosterOrderTable extends Migration
      */
     public function up()
     {
-        Schema::create('poster_order', function (Blueprint $table) {
+        Schema::create('order_poster', function (Blueprint $table) {
             $table->increments('id')->unsigned();
             $table->integer('poster_id');
             $table->integer('order_id');
@@ -26,6 +26,6 @@ class CreatePosterOrderTable extends Migration
      */
     public function down()
     {
-        Schema::drop('poster_order');
+        Schema::drop('order_poster');
     }
 }

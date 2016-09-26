@@ -18,3 +18,12 @@ Route::get('/', 'IndexController@index');
 //Route::resource('posters', 'PostersController');
 
 Route::get('/poster/{posterId}', 'PostersController@index');
+
+Route::get('/cart', 'PostersController@cart');
+
+Route::get('/completeOrder', 'PostersController@completeOrder');
+
+Route::get('/poster/addToCart/{posterId}', 'PostersController@addToCart');
+
+Route::get('/poster/removeFromCart/{posterId}', 'PostersController@removeFromCart');
+

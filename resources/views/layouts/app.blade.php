@@ -1,3 +1,12 @@
+<?php
+    $session = session()->get('shoppingCart');
+    $inBriefcase = 0;
+    if($session){
+        foreach($session as $key => $value)
+            $inBriefcase += $value;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,12 +52,14 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
+                    <?php if (Auth::check()): ?>
                     <li class="shopping-cart">
-                        <a href="#">
+                        <a href="/cart">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            <span class="shopping-counter">0</span>
+                            <span class="shopping-counter"><?=$inBriefcase;?></span>
                         </a>
                     </li>
+                    <?php endif; ?>
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>

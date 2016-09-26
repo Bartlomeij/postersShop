@@ -70,6 +70,10 @@ article{
     display: inline-block;
     padding: 0 16px;
 }
+.add-to-cart-btn a{
+    color: #fff;
+    text-decoration: none;
+}
 .shipping{
     font-size: 12px;
     color: #a9a8a8;
@@ -95,7 +99,7 @@ article{
     font-size: 12px;
     line-height: 15px;
     height: 15px;
-    width: 15px;
+    min-width: 15px;
     border-radius: 50px;
     display: block;
     text-align: center;

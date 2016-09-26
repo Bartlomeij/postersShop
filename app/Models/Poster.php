@@ -1,0 +1,12 @@
+<?php
+namespace App\Models;
+use Illuminate\Database\Eloquent\Model;
+
+class Poster extends Model
+{
+    protected $guarded = ['id'];
+    
+    public function orders() {
+        return $this->belongsToMany(Order::class);
+    }
+}
