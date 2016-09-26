@@ -14,48 +14,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
-
-    <style>
-        body {
-            font-family: 'Lato';
-        }
-
-        .fa-btn {
-            margin-right: 6px;
-        }
-        
-        .navbar-default{
-            width: 100%;
-            position: fixed;
-        }
-        
-        article{
-            padding-top: 70px;
-        }
-        
-        .posters{
-            text-align: center;
-        }
-        
-        .poster img{
-            margin-bottom: 15px;
-            box-shadow: 3px 3px 3px grey;
-            -moz-filter: brightness(0.6);
-            -o-filter: brightness(0.6);
-            -ms-filter: brightness(0.6);
-            filter: brightness(0.6);
-            transition-duration:0.5s;
-        }
-        .poster img:hover{
-            margin-bottom: 15px;
-            box-shadow: 3px 3px 3px grey;
-            -moz-filter: brightness(1);
-            -o-filter: brightness(1);
-            -ms-filter: brightness(1);
-            filter: brightness(1);
-            transition-duration:0.5s;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ URL::asset('/') }}css/style.css" />
 </head>
 <body id="app-layout">
     <nav class="navbar navbar-default navbar-static-top">

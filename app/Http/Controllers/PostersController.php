@@ -18,7 +18,8 @@ class PostersController extends Controller
     public function index($posterId)
     {
         $poster = Posters::find($posterId);
-        return view('poster',['poster' => $poster]);
+        $recommended = Posters::all()->random(3);
+        return view('poster',['poster' => $poster, 'recommended' => $recommended]);
     }
 
     /**
