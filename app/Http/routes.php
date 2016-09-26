@@ -15,4 +15,6 @@ Route::auth();
 
 Route::get('/', 'IndexController@index');
 
-Route::resource('/poster/{posterId}', 'PostersController@index');
+//Route::resource('posters', 'PostersController');
+
+Route::get('/poster/{posterId}', 'PostersController@index');
