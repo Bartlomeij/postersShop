@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSubjectToOrderTable extends Migration
+class CreatePosterOrderTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,10 @@ class CreateSubjectToOrderTable extends Migration
      */
     public function up()
     {
-        Schema::create('subject_to_order', function (Blueprint $table) {
+        Schema::create('poster_order', function (Blueprint $table) {
+            $table->increments('id')->unsigned();
+            $table->integer('poster_id');
             $table->integer('order_id');
-            $table->integer('subject_id');
-            $table->string('subject_type')->default('poster');
-            $table->timestamps();
-            $table->integer('deleted')->default(0);
         });
     }
 
@@ -28,6 +26,6 @@ class CreateSubjectToOrderTable extends Migration
      */
     public function down()
     {
-        Schema::drop('subject_to_order');
+        Schema::drop('poster_order');
     }
 }
