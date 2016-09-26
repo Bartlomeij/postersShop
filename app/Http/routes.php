@@ -13,6 +13,6 @@
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
-
 Route::get('/', 'IndexController@index');
+
+Route::resource('/poster/{posterId}', 'PostersController@index');
