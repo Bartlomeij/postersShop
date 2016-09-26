@@ -83,3 +83,20 @@ article{
     width: 90%;
     box-shadow: 3px 3px 3px grey;
 }
+
+.shopping-cart{
+    font-size: 18px;
+}
+
+.shopping-counter{
+    float: left;
+    color: white;
+    background-color: red;
+    font-size: 12px;
+    line-height: 15px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+}

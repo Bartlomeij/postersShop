@@ -43,6 +43,12 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="shopping-cart">
+                        <a href="#">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span class="shopping-counter">0</span>
+                        </a>
+                    </li>
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>

@@ -16,7 +16,7 @@
                             <p><?=$poster->description;?></p>
                             <p><div class="add-to-cart-btn">€<?=$poster->price;?> <span>&nbsp;|&nbsp;</span> ADD TO CART</div></p>
                             <p class="shipping">FREE EXPRESS (3-4 working days) Shipping to Poland with 3 or more Posterplates.</p>
-                            <h4>Recommended posters:</h4>
+                            <h4>Recommended for you:</h4>
                             <div class="row">
                                 <?php foreach($recommended as $rec_poster):?>
                                 <div class="col-xs-12 col-md-4 recommended poster">
